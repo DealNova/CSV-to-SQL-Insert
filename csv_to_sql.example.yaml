@@ -1,0 +1,3 @@
+csv_input_path: "csv_input/"
+sql_output_path: "sql_output/"
+yaml_input: "saved_converts/"
