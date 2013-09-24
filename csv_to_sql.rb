@@ -37,7 +37,7 @@ $num_rows =  file.readlines.size
  
 file.close
  
-CSV.foreach($args["csv_input"] ) do |row|
+CSV.foreach($args["csv_input"] , {:col_sep => $CONFIG['csv_delimiter']} ) do |row|
     if $csv_def.nil? == true
 		$csv_def = row.join(",")
 	else
